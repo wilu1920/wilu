@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wilki</title>
+    <style>
+    *{
+        text-align:center;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background: #00FFFF;
+    }
+    .container {
+        display: flex; /* Ustawienie kontenera na flexbox */
+    }
+    .left-column {
+        flex: 1; /* Pierwsza kolumna zajmuje 1/2 dostępnej przestrzeni */
+        background: #000000;
+        color: white; /* Kolor tekstu */
+    }
+    .right-column {
+        flex: 1; /* Druga kolumna zajmuje 1/2 dostępnej przestrzeni */
+        background: #FFFFFF; /* Kolor tła obrazka */
+        display: flex; /* Ustawienie drugiej kolumny na flexbox */
+        align-items: center; /* Wyśrodkowanie zawartości w pionie */
+        justify-content: center; /* Wyśrodkowanie zawartości w poziomie */
+    }
+    footer{
+        background: #00FF00;
+    }
+    nav{
+        background: #FF00FF;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wilki</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left-column">
+                <p>Wilki to drapieżne ssaki z rodziny psowatych.
+				Są znane ze swojego społecznego charakteru i złożonych form współpracy w stadach.
+				Wilki występują na całym świecie, ale najbardziej znane są wilki szare, zamieszkujące Eurazję i Amerykę Północną.</p>
+            </div>
+            <div class="right-column">
+                <img src="wilk.jpg" alt="wilu">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Wykonał: Kamil Wilk</h2>
+    </footer>
+</body>
+</html>
